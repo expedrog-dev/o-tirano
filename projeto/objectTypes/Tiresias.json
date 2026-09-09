@@ -1,0 +1,62 @@
+{
+	"name": "Tiresias",
+	"plugin-id": "Sprite",
+	"sid": 243104446066435,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1230,
+						"height": 1278,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4522911,
+						"collisionPoly": {
+							"points": [
+								0.5154471544715448,
+								0.23082942097026604,
+								0.5804878048780487,
+								0.28325508607198746,
+								0.6056910569105691,
+								0.3458528951486698,
+								0.6422764227642277,
+								0.528169014084507,
+								0.6373983739837399,
+								0.6572769953051644,
+								0.6284552845528455,
+								0.7214397496087637,
+								0.5804878048780487,
+								0.8677621283255086,
+								0.3829268292682927,
+								0.8544600938967136,
+								0.3382113821138211,
+								0.2809076682316119
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 950237419900385,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,1753 @@
+{
+  "name": "Eventos_Dialogo",
+  "events": [
+    {
+      "eventType": "variable",
+      "name": "LinhaDialogo",
+      "type": "number",
+      "initialValue": "0",
+      "comment": "",
+      "isStatic": false,
+      "isConstant": false,
+      "sid": 269945564855135
+    },
+    {
+      "eventType": "variable",
+      "name": "DialogoAtivo",
+      "type": "boolean",
+      "initialValue": "false",
+      "comment": "",
+      "isStatic": false,
+      "isConstant": false,
+      "sid": 479883696142890
+    },
+    {
+      "eventType": "variable",
+      "name": "DialogoAtual",
+      "type": "number",
+      "initialValue": "0",
+      "comment": "",
+      "isStatic": false,
+      "isConstant": false,
+      "sid": 307866445395271
+    },
+    {
+      "eventType": "variable",
+      "name": "UltimaLinha",
+      "type": "number",
+      "initialValue": "0",
+      "comment": "",
+      "isStatic": false,
+      "isConstant": false,
+      "sid": 258133176083106
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-start-of-layout",
+          "objectClass": "System",
+          "sid": 736133011108443
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-at-xy",
+          "objectClass": "DadosDialogo",
+          "sid": 564012358553611,
+          "parameters": {
+            "x": "0",
+            "y": "0",
+            "value": "\"Homem desconhecido\""
+          }
+        },
+        {
+          "id": "set-at-xy",
+          "objectClass": "DadosDialogo",
+          "sid": 856933221950934,
+          "parameters": {
+            "x": "1",
+            "y": "0",
+            "value": "\"Saia do caminho\""
+          }
+        },
+        {
+          "id": "set-at-xy",
+          "objectClass": "DadosDialogo",
+          "sid": 278545098429543,
+          "parameters": {
+            "x": "0",
+            "y": "1",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xy",
+          "objectClass": "DadosDialogo",
+          "sid": 633900951129795,
+          "parameters": {
+            "x": "1",
+            "y": "1",
+            "value": "\"A estrada não pertence a você\""
+          }
+        },
+        {
+          "id": "set-at-xy",
+          "objectClass": "DadosDialogo",
+          "sid": 779118736476298,
+          "parameters": {
+            "x": "0",
+            "y": "2",
+            "value": "\"Homem desconhecido\""
+          }
+        },
+        {
+          "id": "set-at-xy",
+          "objectClass": "DadosDialogo",
+          "sid": 969285581493890,
+          "parameters": {
+            "x": "1",
+            "y": "2",
+            "value": "\"Você sabe com quem está falando?\""
+          }
+        },
+        {
+          "id": "set-at-xy",
+          "objectClass": "DadosDialogo",
+          "sid": 778013193518412,
+          "parameters": {
+            "x": "0",
+            "y": "3",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xy",
+          "objectClass": "DadosDialogo",
+          "sid": 214518741635212,
+          "parameters": {
+            "x": "1",
+            "y": "3",
+            "value": "\"Não. E não me interessa.\""
+          }
+        }
+      ],
+      "sid": 233970401449946
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-key-pressed",
+          "objectClass": "Teclado",
+          "sid": 773255957785616,
+          "parameters": {
+            "key": 32
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 212771967353978,
+          "parameters": {
+            "variable": "DialogoAtivo"
+          }
+        },
+        {
+          "id": "compare-eventvar",
+          "objectClass": "System",
+          "sid": 128952031580379,
+          "parameters": {
+            "variable": "LinhaDialogo",
+            "comparison": 0,
+            "value": "UltimaLinha"
+          }
+        },
+        {
+          "id": "compare-eventvar",
+          "objectClass": "System",
+          "sid": 272936669224732,
+          "parameters": {
+            "variable": "DialogoAtual",
+            "comparison": 1,
+            "value": "1"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-visible",
+          "objectClass": "CaixaDialogo",
+          "sid": 469597553766207,
+          "parameters": {
+            "visibility": "invisible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "NomeDialogo",
+          "sid": 980131325170539,
+          "parameters": {
+            "visibility": "invisible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "FalaDialogo",
+          "sid": 278908210243003,
+          "parameters": {
+            "visibility": "invisible"
+          }
+        },
+        {
+          "id": "set-enabled",
+          "objectClass": "Édipo",
+          "sid": 724519889991909,
+          "behaviorType": "8Direções",
+          "parameters": {
+            "state": "enabled"
+          }
+        },
+        {
+          "id": "set-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 686508840455497,
+          "parameters": {
+            "variable": "DialogoAtivo",
+            "value": "false"
+          }
+        }
+      ],
+      "sid": 786283651434434,
+      "children": [
+        {
+          "eventType": "block",
+          "conditions": [
+            {
+              "id": "compare-eventvar",
+              "objectClass": "System",
+              "sid": 325346712276043,
+              "parameters": {
+                "variable": "DialogoAtual",
+                "comparison": 0,
+                "value": "0"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "id": "set-boolean-eventvar",
+              "objectClass": "System",
+              "sid": 131386174152774,
+              "parameters": {
+                "variable": "CenaLaioConcluida",
+                "value": "true"
+              }
+            }
+          ],
+          "sid": 666450110500430
+        },
+        {
+          "eventType": "block",
+          "conditions": [
+            {
+              "id": "compare-eventvar",
+              "objectClass": "System",
+              "sid": 574319318413215,
+              "parameters": {
+                "variable": "DialogoAtual",
+                "comparison": 0,
+                "value": "2"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "id": "set-boolean-eventvar",
+              "objectClass": "System",
+              "sid": 933094533026292,
+              "parameters": {
+                "variable": "Investigacaoiniciada",
+                "value": "true"
+              }
+            }
+          ],
+          "sid": 116147321856531
+        },
+        {
+          "eventType": "block",
+          "conditions": [
+            {
+              "id": "compare-eventvar",
+              "objectClass": "System",
+              "sid": 361613104297136,
+              "parameters": {
+                "variable": "DialogoAtual",
+                "comparison": 0,
+                "value": "3"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "id": "set-boolean-eventvar",
+              "objectClass": "System",
+              "sid": 376431416323299,
+              "parameters": {
+                "variable": "PistaLaioLiberada",
+                "value": "true"
+              }
+            }
+          ],
+          "sid": 403796892167035
+        },
+        {
+          "eventType": "block",
+          "conditions": [
+            {
+              "id": "compare-eventvar",
+              "objectClass": "System",
+              "sid": 356805553672879,
+              "parameters": {
+                "variable": "DialogoAtual",
+                "comparison": 0,
+                "value": "4"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "id": "set-boolean-eventvar",
+              "objectClass": "System",
+              "sid": 686593257717976,
+              "parameters": {
+                "variable": "SuspeitaEdipo",
+                "value": "true"
+              }
+            }
+          ],
+          "sid": 332411742155184
+        },
+        {
+          "eventType": "block",
+          "conditions": [
+            {
+              "id": "compare-eventvar",
+              "objectClass": "System",
+              "sid": 699164181248931,
+              "parameters": {
+                "variable": "DialogoAtual",
+                "comparison": 0,
+                "value": "5"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "id": "set-boolean-eventvar",
+              "objectClass": "System",
+              "sid": 650805716787587,
+              "parameters": {
+                "variable": "TiresiasConcluido",
+                "value": "true"
+              }
+            }
+          ],
+          "sid": 785076940152453
+        },
+        {
+          "eventType": "block",
+          "conditions": [
+            {
+              "id": "compare-eventvar",
+              "objectClass": "System",
+              "sid": 912070003863363,
+              "parameters": {
+                "variable": "DialogoAtual",
+                "comparison": 0,
+                "value": "6"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "id": "set-boolean-eventvar",
+              "objectClass": "System",
+              "sid": 154956122068244,
+              "parameters": {
+                "variable": "JocastaConcluida",
+                "value": "true"
+              }
+            }
+          ],
+          "sid": 516967017915838
+        },
+        {
+          "eventType": "block",
+          "conditions": [
+            {
+              "id": "compare-eventvar",
+              "objectClass": "System",
+              "sid": 910576448147792,
+              "parameters": {
+                "variable": "DialogoAtual",
+                "comparison": 0,
+                "value": "7"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "id": "set-boolean-eventvar",
+              "objectClass": "System",
+              "sid": 470859522158603,
+              "parameters": {
+                "variable": "RevelacaoFinal",
+                "value": "true"
+              }
+            }
+          ],
+          "sid": 713960794872542
+        }
+      ]
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-key-pressed",
+          "objectClass": "Teclado",
+          "sid": 715685524340279,
+          "parameters": {
+            "key": 32
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 458831807128110,
+          "parameters": {
+            "variable": "DialogoAtivo"
+          }
+        },
+        {
+          "id": "compare-eventvar",
+          "objectClass": "System",
+          "sid": 189609230772210,
+          "parameters": {
+            "variable": "LinhaDialogo",
+            "comparison": 0,
+            "value": "UltimaLinha"
+          }
+        },
+        {
+          "id": "compare-eventvar",
+          "objectClass": "System",
+          "sid": 690153561166416,
+          "parameters": {
+            "variable": "DialogoAtual",
+            "comparison": 0,
+            "value": "1"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-visible",
+          "objectClass": "CaixaDialogo",
+          "sid": 965069597513093,
+          "parameters": {
+            "visibility": "invisible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "NomeDialogo",
+          "sid": 336096083117409,
+          "parameters": {
+            "visibility": "invisible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "FalaDialogo",
+          "sid": 610363464884781,
+          "parameters": {
+            "visibility": "invisible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "Resposta1",
+          "sid": 221379666937775,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "Resposta2",
+          "sid": 555759630944761,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "Resposta3",
+          "sid": 123257887709375,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 286002205108783,
+          "parameters": {
+            "variable": "DialogoAtivo",
+            "value": "false"
+          }
+        },
+        {
+          "id": "set-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 739441198323868,
+          "parameters": {
+            "variable": "EnigmaAtivo",
+            "value": "true"
+          }
+        }
+      ],
+      "sid": 474823603230211
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-key-pressed",
+          "objectClass": "Teclado",
+          "sid": 839150710948233,
+          "parameters": {
+            "key": 32
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 680936186104348,
+          "parameters": {
+            "variable": "DialogoAtivo"
+          }
+        },
+        {
+          "id": "compare-eventvar",
+          "objectClass": "System",
+          "sid": 748543150357654,
+          "parameters": {
+            "variable": "LinhaDialogo",
+            "comparison": 2,
+            "value": "UltimaLinha"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "add-to-eventvar",
+          "objectClass": "System",
+          "sid": 931483854087816,
+          "parameters": {
+            "variable": "LinhaDialogo",
+            "value": "1"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "NomeDialogo",
+          "sid": 140154175258533,
+          "parameters": {
+            "text": "DadosDialogo.At(0, LinhaDialogo, DialogoAtual)"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "FalaDialogo",
+          "sid": 108688802217957,
+          "parameters": {
+            "text": "DadosDialogo.At(1, LinhaDialogo, DialogoAtual)"
+          }
+        }
+      ],
+      "sid": 967085435015995
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-start-of-layout",
+          "objectClass": "System",
+          "sid": 809744998688673
+        },
+        {
+          "id": "compare-eventvar",
+          "objectClass": "System",
+          "sid": 238710360726954,
+          "parameters": {
+            "variable": "DialogoAtual",
+            "comparison": 1,
+            "value": "1"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 783763348562633,
+          "parameters": {
+            "x": "0",
+            "y": "0",
+            "z": "1",
+            "value": "\"Esfinge\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 400733452051984,
+          "parameters": {
+            "x": "1",
+            "y": "0",
+            "z": "1",
+            "value": "\"Outro viajante em busca da morte.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 173951284939695,
+          "parameters": {
+            "x": "0",
+            "y": "1",
+            "z": "1",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 315604763645357,
+          "parameters": {
+            "x": "1",
+            "y": "1",
+            "z": "1",
+            "value": "\"Busco apenas passagem para Tebas.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 864594312138418,
+          "parameters": {
+            "x": "0",
+            "y": "2",
+            "z": "1",
+            "value": "\"Esfinge\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 650709411102006,
+          "parameters": {
+            "x": "1",
+            "y": "2",
+            "z": "1",
+            "value": "\"Ninguém passa sem responder ao meu enigma.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 960780213999808,
+          "parameters": {
+            "x": "0",
+            "y": "3",
+            "z": "1",
+            "value": "\"Esfinge\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 716984090490792,
+          "parameters": {
+            "x": "1",
+            "y": "3",
+            "z": "1",
+            "value": "\"Que criatura anda sobre quatro pés pela manhã...\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 205584970468172,
+          "parameters": {
+            "x": "0",
+            "y": "4",
+            "z": "1",
+            "value": "\"Esfinge\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 175352913945129,
+          "parameters": {
+            "x": "1",
+            "y": "4",
+            "z": "1",
+            "value": "\"...dois ao meio-dia e três ao anoitecer?\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 312451360425914,
+          "parameters": {
+            "x": "0",
+            "y": "5",
+            "z": "1",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 752796871679189,
+          "parameters": {
+            "x": "1",
+            "y": "5",
+            "z": "1",
+            "value": "\"...\""
+          }
+        }
+      ],
+      "sid": 119232257323419
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-start-of-layout",
+          "objectClass": "System",
+          "sid": 297686990855907
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 355510315338505,
+          "parameters": {
+            "x": "0",
+            "y": "0",
+            "z": "2",
+            "value": "\"Cidadão\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 398203819145898,
+          "parameters": {
+            "x": "1",
+            "y": "0",
+            "z": "2",
+            "value": "\"Rei Édipo... graças aos deuses. Tebas está morrendo.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 912278461475925,
+          "parameters": {
+            "x": "0",
+            "y": "1",
+            "z": "2",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 791035235668275,
+          "parameters": {
+            "x": "1",
+            "y": "1",
+            "z": "2",
+            "value": "\"O que aconteceu com a cidade?\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 971790026628623,
+          "parameters": {
+            "x": "0",
+            "y": "2",
+            "z": "2",
+            "value": "\"Cidadão\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 691737554316927,
+          "parameters": {
+            "x": "1",
+            "y": "2",
+            "z": "2",
+            "value": "\"Uma doença tomou nossas casas. Todos os dias perdemos mais pessoas.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 625478614745543,
+          "parameters": {
+            "x": "0",
+            "y": "3",
+            "z": "2",
+            "value": "\"Cidadão\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 527511333475276,
+          "parameters": {
+            "x": "1",
+            "y": "3",
+            "z": "2",
+            "value": "\"Dizem que os deuses só cessarão a praga quando a morte do antigo rei for vingada.\""
+          }
+        }
+      ],
+      "sid": 769437147114665
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-start-of-layout",
+          "objectClass": "System",
+          "sid": 770426532036213
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 945152047883258,
+          "parameters": {
+            "x": "0",
+            "y": "0",
+            "z": "3",
+            "value": "\"Creonte\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 314912582328047,
+          "parameters": {
+            "x": "1",
+            "y": "0",
+            "z": "3",
+            "value": "\"Édipo. O oráculo respondeu.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 741875837315974,
+          "parameters": {
+            "x": "0",
+            "y": "1",
+            "z": "3",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 116503243924864,
+          "parameters": {
+            "x": "1",
+            "y": "1",
+            "z": "3",
+            "value": "\"Então fale.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 616545873869369,
+          "parameters": {
+            "x": "0",
+            "y": "2",
+            "z": "3",
+            "value": "\"Creonte\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 202601728302735,
+          "parameters": {
+            "x": "1",
+            "y": "2",
+            "z": "3",
+            "value": "\"A praga não cessará enquanto o sangue de Laio permanecer sem justiça.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 759565382282207,
+          "parameters": {
+            "x": "0",
+            "y": "3",
+            "z": "3",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 101229081047150,
+          "parameters": {
+            "x": "1",
+            "y": "3",
+            "z": "3",
+            "value": "\"O antigo rei...\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 267426489717702,
+          "parameters": {
+            "x": "0",
+            "y": "4",
+            "z": "3",
+            "value": "\"Creonte\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 942613267224816,
+          "parameters": {
+            "x": "1",
+            "y": "4",
+            "z": "3",
+            "value": "\"Seu assassino jamais foi encontrado.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 175452335638312,
+          "parameters": {
+            "x": "0",
+            "y": "5",
+            "z": "3",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 405259939549750,
+          "parameters": {
+            "x": "1",
+            "y": "5",
+            "z": "3",
+            "value": "\"Então eu o encontrarei.\""
+          }
+        }
+      ],
+      "sid": 449764829067282
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-start-of-layout",
+          "objectClass": "System",
+          "sid": 202887010325681
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 701818859349130,
+          "parameters": {
+            "x": "0",
+            "y": "0",
+            "z": "4",
+            "value": "\"Testemunha\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 165005502349520,
+          "parameters": {
+            "x": "1",
+            "y": "0",
+            "z": "4",
+            "value": "\"Eu estava com o rei Laio no dia de sua morte.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 693347013595385,
+          "parameters": {
+            "x": "0",
+            "y": "1",
+            "z": "4",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 502370453591242,
+          "parameters": {
+            "x": "1",
+            "y": "1",
+            "z": "4",
+            "value": "\"Conte-me tudo o que se lembra.\"\n"
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 268111200036720,
+          "parameters": {
+            "x": "0",
+            "y": "2",
+            "z": "4",
+            "value": "\"Testemunha\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 656189308993585,
+          "parameters": {
+            "x": "1",
+            "y": "2",
+            "z": "4",
+            "value": "\"Fomos atacados na estrada, perto de uma encruzilhada.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 638301706293287,
+          "parameters": {
+            "x": "0",
+            "y": "3",
+            "z": "4",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 614526983929762,
+          "parameters": {
+            "x": "1",
+            "y": "3",
+            "z": "4",
+            "value": "\"Uma encruzilhada...\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 779261198465455,
+          "parameters": {
+            "x": "0",
+            "y": "4",
+            "z": "4",
+            "value": "\"Testemunha\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 283869428134372,
+          "parameters": {
+            "x": "1",
+            "y": "4",
+            "z": "4",
+            "value": "\"Um homem sozinho enfrentou o rei e seus homens.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 401926859127677,
+          "parameters": {
+            "x": "0",
+            "y": "5",
+            "z": "4",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 768552569562713,
+          "parameters": {
+            "x": "1",
+            "y": "5",
+            "z": "4",
+            "value": "\"...\""
+          }
+        }
+      ],
+      "sid": 280295168154734
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-start-of-layout",
+          "objectClass": "System",
+          "sid": 880534975829565
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 660655696010431,
+          "parameters": {
+            "x": "0",
+            "y": "0",
+            "z": "5",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 676869040680078,
+          "parameters": {
+            "x": "1",
+            "y": "0",
+            "z": "5",
+            "value": "\"Tirésias. Diga-me quem matou Laio.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 818653311996304,
+          "parameters": {
+            "x": "0",
+            "y": "1",
+            "z": "5",
+            "value": "\"Tirésias\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 629521660896157,
+          "parameters": {
+            "x": "1",
+            "y": "1",
+            "z": "5",
+            "value": "\"Há verdades que trazem mais dor que silêncio.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 357092965965839,
+          "parameters": {
+            "x": "0",
+            "y": "2",
+            "z": "5",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 105595827024600,
+          "parameters": {
+            "x": "1",
+            "y": "2",
+            "z": "5",
+            "value": "\"Não vim buscar enigmas.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 128425951128598,
+          "parameters": {
+            "x": "1",
+            "y": "2",
+            "z": "5",
+            "value": "\"Não vim buscar enigmas.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 277522223576235,
+          "parameters": {
+            "x": "0",
+            "y": "3",
+            "z": "5",
+            "value": "\"Tirésias\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 641628734751139,
+          "parameters": {
+            "x": "1",
+            "y": "3",
+            "z": "5",
+            "value": "\"Então escute: o homem que procura está mais perto do que imagina.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 924656990512138,
+          "parameters": {
+            "x": "0",
+            "y": "4",
+            "z": "5",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 902183391906777,
+          "parameters": {
+            "x": "1",
+            "y": "4",
+            "z": "5",
+            "value": "\"Está me acusando?\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 259810661725603,
+          "parameters": {
+            "x": "0",
+            "y": "5",
+            "z": "5",
+            "value": "\"Tirésias\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 766732354738696,
+          "parameters": {
+            "x": "1",
+            "y": "5",
+            "z": "5",
+            "value": "\"Eu apenas digo aquilo que você ainda se recusa a enxergar.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 420486021795547,
+          "parameters": {
+            "x": "0",
+            "y": "6",
+            "z": "5",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 739535407890584,
+          "parameters": {
+            "x": "1",
+            "y": "6",
+            "z": "5",
+            "value": "\"Chega.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 429504339459889,
+          "parameters": {
+            "x": "0",
+            "y": "7",
+            "z": "5",
+            "value": "\"Tirésias\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 529458660522011,
+          "parameters": {
+            "x": "1",
+            "y": "7",
+            "z": "5",
+            "value": "\"Você descobrirá a verdade. E desejará nunca tê-la encontrado.\""
+          }
+        }
+      ],
+      "sid": 571749697540266
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-start-of-layout",
+          "objectClass": "System",
+          "sid": 135724908300168
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 730242199034888,
+          "parameters": {
+            "x": "0",
+            "y": "0",
+            "z": "6",
+            "value": "\"Jocasta\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 257566942868495,
+          "parameters": {
+            "x": "1",
+            "y": "0",
+            "z": "6",
+            "value": "\"Édipo, abandone essa investigação.\"\n"
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 467519988331971,
+          "parameters": {
+            "x": "0",
+            "y": "1",
+            "z": "6",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 124666728661195,
+          "parameters": {
+            "x": "1",
+            "y": "1",
+            "z": "6",
+            "value": "\"Por quê? Estou perto demais da verdade?\"\n"
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 335475747677984,
+          "parameters": {
+            "x": "0",
+            "y": "2",
+            "z": "6",
+            "value": "\"Jocasta\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 318104872914845,
+          "parameters": {
+            "x": "1",
+            "y": "2",
+            "z": "6",
+            "value": "\"Algumas verdades deveriam permanecer enterradas.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 790742537798765,
+          "parameters": {
+            "x": "0",
+            "y": "3",
+            "z": "6",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 604801066256608,
+          "parameters": {
+            "x": "1",
+            "y": "3",
+            "z": "6",
+            "value": "\"Laio morreu numa encruzilhada. Eu matei um homem numa encruzilhada.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 335124548989020,
+          "parameters": {
+            "x": "0",
+            "y": "4",
+            "z": "6",
+            "value": "\"Jocasta\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 359384115339433,
+          "parameters": {
+            "x": "1",
+            "y": "4",
+            "z": "6",
+            "value": "\"Pare, Édipo.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 796131855265850,
+          "parameters": {
+            "x": "0",
+            "y": "5",
+            "z": "6",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 228889847268839,
+          "parameters": {
+            "x": "1",
+            "y": "5",
+            "z": "6",
+            "value": "\"Você sabe de alguma coisa.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 962024990122864,
+          "parameters": {
+            "x": "0",
+            "y": "6",
+            "z": "6",
+            "value": "\"Jocasta\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 988864966090229,
+          "parameters": {
+            "x": "1",
+            "y": "6",
+            "z": "6",
+            "value": "\"Por favor... não procure mais.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 828446437310497,
+          "parameters": {
+            "x": "0",
+            "y": "7",
+            "z": "6",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 972158395899093,
+          "parameters": {
+            "x": "1",
+            "y": "7",
+            "z": "6",
+            "value": "\"Agora eu preciso saber.\""
+          }
+        }
+      ],
+      "sid": 512865201346517
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-start-of-layout",
+          "objectClass": "System",
+          "sid": 214031329713298
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 277886936087376,
+          "parameters": {
+            "x": "0",
+            "y": "0",
+            "z": "7",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 109787866515067,
+          "parameters": {
+            "x": "1",
+            "y": "0",
+            "z": "7",
+            "value": "\"Você serviu ao rei Laio?\"\n"
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 187134633247883,
+          "parameters": {
+            "x": "0",
+            "y": "1",
+            "z": "7",
+            "value": "\"Pastor\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 550622235685420,
+          "parameters": {
+            "x": "1",
+            "y": "1",
+            "z": "7",
+            "value": "\"Servi.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 705641683022459,
+          "parameters": {
+            "x": "0",
+            "y": "2",
+            "z": "7",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 112228927896372,
+          "parameters": {
+            "x": "1",
+            "y": "2",
+            "z": "7",
+            "value": "\"Então diga o que sabe.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 796925576642434,
+          "parameters": {
+            "x": "0",
+            "y": "3",
+            "z": "7",
+            "value": "\"Pastor\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 367877816727682,
+          "parameters": {
+            "x": "1",
+            "y": "3",
+            "z": "7",
+            "value": "\"Havia uma criança.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 423854039475673,
+          "parameters": {
+            "x": "0",
+            "y": "4",
+            "z": "7",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 423850624607964,
+          "parameters": {
+            "x": "1",
+            "y": "4",
+            "z": "7",
+            "value": "\"Que criança?\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 639446148713497,
+          "parameters": {
+            "x": "0",
+            "y": "5",
+            "z": "7",
+            "value": "\"Pastor\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 873654222648959,
+          "parameters": {
+            "x": "1",
+            "y": "5",
+            "z": "7",
+            "value": "\"O filho de Laio e Jocasta.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 386586360535325,
+          "parameters": {
+            "x": "0",
+            "y": "6",
+            "z": "7",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 413168990573040,
+          "parameters": {
+            "x": "1",
+            "y": "6",
+            "z": "7",
+            "value": "\"Continue.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 126720482096032,
+          "parameters": {
+            "x": "0",
+            "y": "7",
+            "z": "7",
+            "value": "\"Pastor\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 619163494198790,
+          "parameters": {
+            "x": "1",
+            "y": "7",
+            "z": "7",
+            "value": "\"Ordenaram que eu o abandonasse para morrer.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 664791872297428,
+          "parameters": {
+            "x": "0",
+            "y": "8",
+            "z": "7",
+            "value": "\"Pastor\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 453582267628872,
+          "parameters": {
+            "x": "1",
+            "y": "8",
+            "z": "7",
+            "value": "\"Mas eu não consegui. Entreguei a criança a outro homem.\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 467481664986024,
+          "parameters": {
+            "x": "0",
+            "y": "9",
+            "z": "7",
+            "value": "\"Édipo\""
+          }
+        },
+        {
+          "id": "set-at-xyz",
+          "objectClass": "DadosDialogo",
+          "sid": 427748013998191,
+          "parameters": {
+            "x": "1",
+            "y": "9",
+            "z": "7",
+            "value": "\"...essa criança era eu.\""
+          }
+        }
+      ],
+      "sid": 603910636640351
+    }
+  ],
+  "sid": 315093573865187
+}

@@ -1,0 +1,64 @@
+{
+	"name": "TestemunhaLaio",
+	"plugin-id": "Sprite",
+	"sid": 757820074588019,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1230,
+						"height": 1278,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4219731,
+						"collisionPoly": {
+							"points": [
+								0.5032520325203252,
+								0.2605633802816901,
+								0.5447154471544715,
+								0.2777777777777778,
+								0.6146341463414634,
+								0.35758998435054773,
+								0.6398373983739838,
+								0.6134585289514867,
+								0.5796747967479675,
+								0.8294209702660407,
+								0.3975609756097561,
+								0.8153364632237872,
+								0.35528455284552846,
+								0.596244131455399,
+								0.36341463414634145,
+								0.37715179968701096,
+								0.38130081300813007,
+								0.3161189358372457,
+								0.4195121951219512,
+								0.2856025039123631
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 750928988490229,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"name": "Eventos_TelaFinal",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 513652594826426,
+					"parameters": {
+						"key": 13
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 169121680202172,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 808063229763182
+		}
+	],
+	"sid": 739022928282117
+}

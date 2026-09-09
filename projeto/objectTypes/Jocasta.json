@@ -1,0 +1,64 @@
+{
+	"name": "Jocasta",
+	"plugin-id": "Sprite",
+	"sid": 109681017779624,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1230,
+						"height": 1278,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1742090,
+						"collisionPoly": {
+							"points": [
+								0.46422764227642277,
+								0.25273865414710484,
+								0.5300813008130081,
+								0.25273865414710484,
+								0.6008130081300813,
+								0.3286384976525822,
+								0.6113821138211382,
+								0.3701095461658842,
+								0.5780487804878048,
+								0.8161189358372457,
+								0.4959349593495935,
+								0.823943661971831,
+								0.45121951219512196,
+								0.823943661971831,
+								0.3845528455284553,
+								0.7949921752738655,
+								0.3878048780487805,
+								0.32472613458528954,
+								0.41788617886178864,
+								0.284037558685446
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 747760335552613,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

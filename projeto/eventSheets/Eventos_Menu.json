@@ -1,0 +1,195 @@
+{
+	"name": "Eventos_Menu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 427831491586181,
+					"parameters": {
+						"key": 13
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 874632784397224,
+					"parameters": {
+						"variable": "LinhaDialogo",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 990987733108909,
+					"parameters": {
+						"variable": "DialogoAtual",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 790053017409408,
+					"parameters": {
+						"variable": "UltimaLinha",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 810527192496388,
+					"parameters": {
+						"variable": "DialogoAtivo",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 436551529174595,
+					"parameters": {
+						"variable": "CenaLaioConcluida",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 397782780705603,
+					"parameters": {
+						"variable": "ConfrontoLaioConcluido",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 630497658896817,
+					"parameters": {
+						"variable": "EnigmaAtivo",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 807623357496225,
+					"parameters": {
+						"variable": "EsfingeDerrotada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 953870218338931,
+					"parameters": {
+						"variable": "Investigacaoiniciada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 653109266507200,
+					"parameters": {
+						"variable": "PistaLaioLiberada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 900592066878371,
+					"parameters": {
+						"variable": "SuspeitaEdipo",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 419098255185742,
+					"parameters": {
+						"variable": "TiresiasConcluido",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 248208652262752,
+					"parameters": {
+						"variable": "JocastaConcluida",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 388837267249791,
+					"parameters": {
+						"variable": "RevelacaoFinal",
+						"value": "false"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 752546985677346,
+					"parameters": {
+						"layout": "Estrada"
+					}
+				}
+			],
+			"sid": 694295424842569
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 290392182938942,
+					"parameters": {
+						"key": 13
+					}
+				},
+				{
+					"id": "is-tag-playing",
+					"objectClass": "Áudio",
+					"sid": 571120098684494,
+					"parameters": {
+						"tag": "\"Musica\""
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Áudio",
+					"sid": 450880948687624,
+					"parameters": {
+						"audio-file": {
+							"path": "audio de O Tirano"
+						},
+						"loop": "looping",
+						"volume": "-12 ",
+						"stereo-pan": "0",
+						"tag-optional": "\"Musica\""
+					}
+				}
+			],
+			"sid": 333634475274965
+		}
+	],
+	"sid": 990667032963496
+}

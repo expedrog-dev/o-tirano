@@ -1,0 +1,106 @@
+{
+	"name": "Eventos_Historia",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "CenaLaioConcluida",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 750385292647570
+		},
+		{
+			"eventType": "variable",
+			"name": "ConfrontoLaioConcluido",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 156211105061152
+		},
+		{
+			"eventType": "variable",
+			"name": "EnigmaAtivo",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 157370887906494
+		},
+		{
+			"eventType": "variable",
+			"name": "EsfingeDerrotada",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 498607204241329
+		},
+		{
+			"eventType": "variable",
+			"name": "Investigacaoiniciada",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 829143011907296
+		},
+		{
+			"eventType": "variable",
+			"name": "PistaLaioLiberada",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 950126355856376
+		},
+		{
+			"eventType": "variable",
+			"name": "SuspeitaEdipo",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 584595386147382
+		},
+		{
+			"eventType": "variable",
+			"name": "TiresiasConcluido",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 950870960987178
+		},
+		{
+			"eventType": "variable",
+			"name": "JocastaConcluida",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 963181494807719
+		},
+		{
+			"eventType": "variable",
+			"name": "RevelacaoFinal",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 941693678411777
+		}
+	],
+	"sid": 674545376372113
+}

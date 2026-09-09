@@ -1,0 +1,231 @@
+{
+  "name": "Eventos_EntradaTebas",
+  "events": [
+    {
+      "eventType": "include",
+      "includeSheet": "Eventos_Movimento"
+    },
+    {
+      "eventType": "include",
+      "includeSheet": "Eventos_Historia"
+    },
+    {
+      "eventType": "include",
+      "includeSheet": "Eventos_Dialogo"
+    },
+    {
+      "eventType": "include",
+      "includeSheet": "Eventos_Interacao"
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-key-pressed",
+          "objectClass": "Teclado",
+          "sid": 370498463361011,
+          "parameters": {
+            "key": 49
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 277209902197188,
+          "parameters": {
+            "variable": "EnigmaAtivo"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-visible",
+          "objectClass": "Resposta1",
+          "sid": 381610910664449,
+          "parameters": {
+            "visibility": "invisible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "Resposta2",
+          "sid": 781262541950261,
+          "parameters": {
+            "visibility": "invisible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "Resposta3",
+          "sid": 598676917734178,
+          "parameters": {
+            "visibility": "invisible"
+          }
+        },
+        {
+          "id": "set-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 988027965028802,
+          "parameters": {
+            "variable": "EnigmaAtivo",
+            "value": "false"
+          }
+        },
+        {
+          "id": "set-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 918408041655215,
+          "parameters": {
+            "variable": "EsfingeDerrotada",
+            "value": "true"
+          }
+        },
+        {
+          "id": "destroy",
+          "objectClass": "Esfinge",
+          "sid": 169803085105260
+        },
+        {
+          "id": "set-enabled",
+          "objectClass": "Édipo",
+          "sid": 118295196227066,
+          "behaviorType": "8Direções",
+          "parameters": {
+            "state": "enabled"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "FeedbackEnigma",
+          "sid": 722028368665680,
+          "parameters": {
+            "visibility": "invisible"
+          }
+        }
+      ],
+      "sid": 907618548940577
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-key-pressed",
+          "objectClass": "Teclado",
+          "sid": 360444389545472,
+          "parameters": {
+            "key": 50
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 566247430451723,
+          "parameters": {
+            "variable": "EnigmaAtivo"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-text",
+          "objectClass": "FeedbackEnigma",
+          "sid": 744668799204222,
+          "parameters": {
+            "text": "\"Não. Pense no ciclo da vida.\""
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "FeedbackEnigma",
+          "sid": 704351345313025,
+          "parameters": {
+            "visibility": "visible"
+          }
+        }
+      ],
+      "sid": 364544992540541
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-key-pressed",
+          "objectClass": "Teclado",
+          "sid": 387873377365241,
+          "parameters": {
+            "key": 51
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 374380127111587,
+          "parameters": {
+            "variable": "EnigmaAtivo"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-text",
+          "objectClass": "FeedbackEnigma",
+          "sid": 827112742554859,
+          "parameters": {
+            "text": "\"Errado. Sua resposta não satisfaz o enigma.\""
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "FeedbackEnigma",
+          "sid": 254287341267293,
+          "parameters": {
+            "visibility": "visible"
+          }
+        }
+      ],
+      "sid": 272399094695500
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "is-overlapping-another-object",
+          "objectClass": "Édipo",
+          "sid": 245530309576475,
+          "parameters": {
+            "object": "SaidaEstrada"
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 293633579708368,
+          "parameters": {
+            "variable": "EsfingeDerrotada"
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 561305113005763,
+          "parameters": {
+            "variable": "DialogoAtivo"
+          },
+          "isInverted": true
+        }
+      ],
+      "actions": [
+        {
+          "id": "go-to-layout",
+          "objectClass": "System",
+          "sid": 648425919480299,
+          "parameters": {
+            "layout": "Tebas"
+          }
+        }
+      ],
+      "sid": 279713248247376
+    }
+  ],
+  "sid": 740338088827174
+}

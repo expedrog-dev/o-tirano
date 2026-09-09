@@ -1,0 +1,62 @@
+{
+	"name": "EdipoCego",
+	"plugin-id": "Sprite",
+	"sid": 614486310399960,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1199,
+						"height": 1312,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5968526,
+						"collisionPoly": {
+							"points": [
+								0.4787322768974145,
+								0.19207317073170732,
+								0.5679733110925771,
+								0.20198170731707318,
+								0.646371976647206,
+								0.28125,
+								0.6580483736447039,
+								0.6425304878048781,
+								0.5996663886572143,
+								0.8094512195121951,
+								0.3853211009174312,
+								0.8086890243902439,
+								0.3377814845704754,
+								0.6417682926829268,
+								0.3694745621351126,
+								0.25,
+								0.43286071726438696,
+								0.20198170731707318
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 221156065744008,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

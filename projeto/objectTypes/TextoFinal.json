@@ -1,0 +1,16 @@
+{
+	"name": "TextoFinal",
+	"plugin-id": "Text",
+	"sid": 607941069114714,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Cronômetro",
+			"sid": 183036478138247
+		}
+	],
+	"effectTypes": []
+}

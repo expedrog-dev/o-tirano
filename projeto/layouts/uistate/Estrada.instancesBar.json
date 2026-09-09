@@ -1,0 +1,92 @@
+{
+	"instanceFolderJson": {
+		"items": [],
+		"subfolders": []
+	},
+	"instanceFolderUIStateJson": {
+		"expanded": true,
+		"subfolders": [],
+		"misc": {
+			"global": true,
+			"layout": []
+		}
+	},
+	"instanceFolderItemsJson": [
+		{
+			"sid": 507385389350016,
+			"expanded": true
+		},
+		{
+			"sid": 385779478214737,
+			"expanded": true
+		},
+		{
+			"sid": 232809756313680,
+			"expanded": true
+		},
+		{
+			"sid": 185770330037381,
+			"expanded": true
+		},
+		{
+			"sid": 526713996878161,
+			"expanded": true
+		},
+		{
+			"sid": 868446655634479,
+			"expanded": true
+		},
+		{
+			"sid": 179443384923534,
+			"expanded": true
+		},
+		{
+			"sid": 801338126635925,
+			"expanded": true
+		},
+		{
+			"sid": 967517353486813,
+			"expanded": true
+		},
+		{
+			"sid": 865991861476530,
+			"expanded": true
+		},
+		{
+			"sid": 806618487819629,
+			"expanded": true
+		},
+		{
+			"sid": 527382528249346,
+			"expanded": true
+		},
+		{
+			"sid": 252320990300837,
+			"expanded": true
+		},
+		{
+			"sid": 138106240448586,
+			"expanded": true
+		},
+		{
+			"sid": 973907843896741,
+			"expanded": true
+		},
+		{
+			"sid": 745372564215923,
+			"expanded": true
+		},
+		{
+			"sid": 336895334871806,
+			"expanded": true
+		},
+		{
+			"sid": 716448264857526,
+			"expanded": true
+		},
+		{
+			"sid": 613809217531783,
+			"expanded": true
+		}
+	]
+}

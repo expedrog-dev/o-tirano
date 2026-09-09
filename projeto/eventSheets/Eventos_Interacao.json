@@ -1,0 +1,735 @@
+{
+  "name": "Eventos_Interacao",
+  "events": [
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-key-pressed",
+          "objectClass": "Teclado",
+          "sid": 131320652619504,
+          "parameters": {
+            "key": 69
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 152260977639432,
+          "parameters": {
+            "variable": "EnigmaAtivo"
+          },
+          "isInverted": true
+        },
+        {
+          "id": "pick-nearestfurthest",
+          "objectClass": "Interagivel",
+          "sid": 837289429500270,
+          "parameters": {
+            "which": "nearest",
+            "x": "Édipo.X",
+            "y": "Édipo.Y",
+            "z": "0",
+            "pick-all-tied": false
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 574215340920075,
+          "parameters": {
+            "variable": "DialogoAtivo"
+          },
+          "isInverted": true
+        },
+        {
+          "id": "compare-two-values",
+          "objectClass": "System",
+          "sid": 339502399907269,
+          "parameters": {
+            "first-value": "distance(Édipo.X, Édipo.Y, Interagivel.X, Interagivel.Y)",
+            "comparison": 3,
+            "second-value": "Interagivel.DialogoID = 1 ? 350 : 145"
+          }
+        },
+        {
+          "id": "compare-instance-variable",
+          "objectClass": "Interagivel",
+          "sid": 460754319296293,
+          "parameters": {
+            "instance-variable": "DialogoID",
+            "comparison": 1,
+            "value": "3"
+          }
+        },
+        {
+          "id": "compare-instance-variable",
+          "objectClass": "Interagivel",
+          "sid": 621256550612860,
+          "parameters": {
+            "instance-variable": "DialogoID",
+            "comparison": 1,
+            "value": "4"
+          }
+        },
+        {
+          "id": "compare-instance-variable",
+          "objectClass": "Interagivel",
+          "sid": 276741597856667,
+          "parameters": {
+            "instance-variable": "DialogoID",
+            "comparison": 1,
+            "value": "5"
+          }
+        },
+        {
+          "id": "compare-instance-variable",
+          "objectClass": "Interagivel",
+          "sid": 649630980857750,
+          "parameters": {
+            "instance-variable": "DialogoID",
+            "comparison": 1,
+            "value": "7"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-visible",
+          "objectClass": "CaixaDialogo",
+          "sid": 235813983655018,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "NomeDialogo",
+          "sid": 378844791715409,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "FalaDialogo",
+          "sid": 897121655198073,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "NomeDialogo",
+          "sid": 467354974366400,
+          "parameters": {
+            "text": "DadosDialogo.At(0, 0, Interagivel.DialogoID)"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "FalaDialogo",
+          "sid": 889602030954790,
+          "parameters": {
+            "text": "DadosDialogo.At(1, 0, Interagivel.DialogoID)"
+          }
+        },
+        {
+          "id": "set-enabled",
+          "objectClass": "Édipo",
+          "sid": 272680828831330,
+          "behaviorType": "8Direções",
+          "parameters": {
+            "state": "disabled"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 929886629218269,
+          "parameters": {
+            "variable": "LinhaDialogo",
+            "value": "0"
+          }
+        },
+        {
+          "id": "set-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 372708550384572,
+          "parameters": {
+            "variable": "DialogoAtivo",
+            "value": "true"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 623564766189657,
+          "parameters": {
+            "variable": "DialogoAtual",
+            "value": "Interagivel.DialogoID"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 618262690629669,
+          "parameters": {
+            "variable": "UltimaLinha",
+            "value": "Interagivel.UltimaLinhaDoDialogo"
+          }
+        }
+      ],
+      "sid": 351521238018231
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-key-pressed",
+          "objectClass": "Teclado",
+          "sid": 304327574761996,
+          "parameters": {
+            "key": 69
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 715198224217061,
+          "parameters": {
+            "variable": "EnigmaAtivo"
+          },
+          "isInverted": true
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 446599893473136,
+          "parameters": {
+            "variable": "DialogoAtivo"
+          },
+          "isInverted": true
+        },
+        {
+          "id": "compare-two-values",
+          "objectClass": "System",
+          "sid": 614365089595312,
+          "parameters": {
+            "first-value": "distance(Édipo.X, Édipo.Y, Creonte.X, Creonte.Y)",
+            "comparison": 3,
+            "second-value": "145"
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 937069626536579,
+          "parameters": {
+            "variable": "Investigacaoiniciada"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-visible",
+          "objectClass": "CaixaDialogo",
+          "sid": 662719060217943,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "NomeDialogo",
+          "sid": 913219887658815,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "FalaDialogo",
+          "sid": 342435942082751,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "NomeDialogo",
+          "sid": 847667399034600,
+          "parameters": {
+            "text": "DadosDialogo.At(0, 0, 3)"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "FalaDialogo",
+          "sid": 101312826225221,
+          "parameters": {
+            "text": "DadosDialogo.At(1, 0, 3)"
+          }
+        },
+        {
+          "id": "set-enabled",
+          "objectClass": "Édipo",
+          "sid": 148947285215736,
+          "behaviorType": "8Direções",
+          "parameters": {
+            "state": "disabled"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 647419021119940,
+          "parameters": {
+            "variable": "LinhaDialogo",
+            "value": "0"
+          }
+        },
+        {
+          "id": "set-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 526177254116983,
+          "parameters": {
+            "variable": "DialogoAtivo",
+            "value": "true"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 576742323807208,
+          "parameters": {
+            "variable": "DialogoAtual",
+            "value": "3"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 359797781590505,
+          "parameters": {
+            "variable": "UltimaLinha",
+            "value": "5"
+          }
+        }
+      ],
+      "sid": 224562276396475
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-key-pressed",
+          "objectClass": "Teclado",
+          "sid": 835816918203666,
+          "parameters": {
+            "key": 69
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 816718032293835,
+          "parameters": {
+            "variable": "EnigmaAtivo"
+          },
+          "isInverted": true
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 920280535226343,
+          "parameters": {
+            "variable": "DialogoAtivo"
+          },
+          "isInverted": true
+        },
+        {
+          "id": "compare-two-values",
+          "objectClass": "System",
+          "sid": 945552633622414,
+          "parameters": {
+            "first-value": "distance(Édipo.X, Édipo.Y, TestemunhaLaio.X, TestemunhaLaio.Y)",
+            "comparison": 3,
+            "second-value": "145"
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 949602466636593,
+          "parameters": {
+            "variable": "PistaLaioLiberada"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-visible",
+          "objectClass": "CaixaDialogo",
+          "sid": 705980692615331,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "NomeDialogo",
+          "sid": 928392420507578,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "FalaDialogo",
+          "sid": 494736175214178,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "NomeDialogo",
+          "sid": 273488930528600,
+          "parameters": {
+            "text": "DadosDialogo.At(0, 0, 4)"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "FalaDialogo",
+          "sid": 466465905511820,
+          "parameters": {
+            "text": "DadosDialogo.At(1, 0, 4)"
+          }
+        },
+        {
+          "id": "set-enabled",
+          "objectClass": "Édipo",
+          "sid": 721294171368541,
+          "behaviorType": "8Direções",
+          "parameters": {
+            "state": "disabled"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 422237180469178,
+          "parameters": {
+            "variable": "LinhaDialogo",
+            "value": "0"
+          }
+        },
+        {
+          "id": "set-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 723780812115280,
+          "parameters": {
+            "variable": "DialogoAtivo",
+            "value": "true"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 144850101948926,
+          "parameters": {
+            "variable": "DialogoAtual",
+            "value": "4"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 259085143238530,
+          "parameters": {
+            "variable": "UltimaLinha",
+            "value": "5"
+          }
+        }
+      ],
+      "sid": 501730023067632
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-key-pressed",
+          "objectClass": "Teclado",
+          "sid": 365110276760773,
+          "parameters": {
+            "key": 69
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 267456696801236,
+          "parameters": {
+            "variable": "EnigmaAtivo"
+          },
+          "isInverted": true
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 502372265388238,
+          "parameters": {
+            "variable": "DialogoAtivo"
+          },
+          "isInverted": true
+        },
+        {
+          "id": "compare-two-values",
+          "objectClass": "System",
+          "sid": 903407051730295,
+          "parameters": {
+            "first-value": "distance(Édipo.X, Édipo.Y, Tiresias.X, Tiresias.Y)",
+            "comparison": 3,
+            "second-value": "145"
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 674890784346906,
+          "parameters": {
+            "variable": "SuspeitaEdipo"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-visible",
+          "objectClass": "CaixaDialogo",
+          "sid": 898613574471812,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "NomeDialogo",
+          "sid": 977785123775142,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "FalaDialogo",
+          "sid": 643149259803947,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "NomeDialogo",
+          "sid": 748400903948731,
+          "parameters": {
+            "text": "DadosDialogo.At(0, 0, 5)"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "FalaDialogo",
+          "sid": 229680207471008,
+          "parameters": {
+            "text": "DadosDialogo.At(1, 0, 5)"
+          }
+        },
+        {
+          "id": "set-enabled",
+          "objectClass": "Édipo",
+          "sid": 719277054509931,
+          "behaviorType": "8Direções",
+          "parameters": {
+            "state": "disabled"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 102513173633092,
+          "parameters": {
+            "variable": "LinhaDialogo",
+            "value": "0"
+          }
+        },
+        {
+          "id": "set-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 872058304842551,
+          "parameters": {
+            "variable": "DialogoAtivo",
+            "value": "true"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 422798295550013,
+          "parameters": {
+            "variable": "DialogoAtual",
+            "value": "5"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 801975894857201,
+          "parameters": {
+            "variable": "UltimaLinha",
+            "value": "7"
+          }
+        }
+      ],
+      "sid": 614936706632249
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "on-key-pressed",
+          "objectClass": "Teclado",
+          "sid": 568529869147945,
+          "parameters": {
+            "key": 69
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 515562480851151,
+          "parameters": {
+            "variable": "EnigmaAtivo"
+          },
+          "isInverted": true
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 202174176470863,
+          "parameters": {
+            "variable": "DialogoAtivo"
+          },
+          "isInverted": true
+        },
+        {
+          "id": "compare-two-values",
+          "objectClass": "System",
+          "sid": 463576410597455,
+          "parameters": {
+            "first-value": "distance(Édipo.X, Édipo.Y, Pastor.X, Pastor.Y)",
+            "comparison": 3,
+            "second-value": "145"
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 434230787449629,
+          "parameters": {
+            "variable": "JocastaConcluida"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "id": "set-visible",
+          "objectClass": "CaixaDialogo",
+          "sid": 437391064185580,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "NomeDialogo",
+          "sid": 444164789924850,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-visible",
+          "objectClass": "FalaDialogo",
+          "sid": 766224982093593,
+          "parameters": {
+            "visibility": "visible"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "NomeDialogo",
+          "sid": 322613567839095,
+          "parameters": {
+            "text": "DadosDialogo.At(0, 0, 7)"
+          }
+        },
+        {
+          "id": "set-text",
+          "objectClass": "FalaDialogo",
+          "sid": 610508217533692,
+          "parameters": {
+            "text": "DadosDialogo.At(1, 0, 7)"
+          }
+        },
+        {
+          "id": "set-enabled",
+          "objectClass": "Édipo",
+          "sid": 783472253274524,
+          "behaviorType": "8Direções",
+          "parameters": {
+            "state": "disabled"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 447613450030842,
+          "parameters": {
+            "variable": "LinhaDialogo",
+            "value": "0"
+          }
+        },
+        {
+          "id": "set-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 556942444765214,
+          "parameters": {
+            "variable": "DialogoAtivo",
+            "value": "true"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 154365327444084,
+          "parameters": {
+            "variable": "DialogoAtual",
+            "value": "7"
+          }
+        },
+        {
+          "id": "set-eventvar-value",
+          "objectClass": "System",
+          "sid": 560613165891404,
+          "parameters": {
+            "variable": "UltimaLinha",
+            "value": "9"
+          }
+        }
+      ],
+      "sid": 835626536811963
+    }
+  ],
+  "sid": 130928753602807
+}

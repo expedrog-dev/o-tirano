@@ -1,0 +1,63 @@
+{
+  "name": "Eventos_Tebas",
+  "events": [
+    {
+      "eventType": "include",
+      "includeSheet": "Eventos_Movimento"
+    },
+    {
+      "eventType": "include",
+      "includeSheet": "Eventos_Interacao"
+    },
+    {
+      "eventType": "include",
+      "includeSheet": "Eventos_Dialogo"
+    },
+    {
+      "eventType": "include",
+      "includeSheet": "Eventos_Historia"
+    },
+    {
+      "eventType": "block",
+      "conditions": [
+        {
+          "id": "is-overlapping-another-object",
+          "objectClass": "Édipo",
+          "sid": 661330534819074,
+          "parameters": {
+            "object": "SaidaEstrada"
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 581394735558617,
+          "parameters": {
+            "variable": "TiresiasConcluido"
+          }
+        },
+        {
+          "id": "compare-boolean-eventvar",
+          "objectClass": "System",
+          "sid": 439156682262974,
+          "parameters": {
+            "variable": "DialogoAtivo"
+          },
+          "isInverted": true
+        }
+      ],
+      "actions": [
+        {
+          "id": "go-to-layout",
+          "objectClass": "System",
+          "sid": 482782509328957,
+          "parameters": {
+            "layout": "Palacio"
+          }
+        }
+      ],
+      "sid": 620919904137614
+    }
+  ],
+  "sid": 959610791068088
+}

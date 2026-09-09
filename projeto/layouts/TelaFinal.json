@@ -1,0 +1,232 @@
+{
+  "name": "TelaFinal",
+  "layers": [
+    {
+      "name": "Camada 0",
+      "overriden": 0,
+      "subLayers": [],
+      "instances": [
+        {
+          "type": "menuProtótipo",
+          "properties": {
+            "initially-visible": true,
+            "initial-animation": "Default",
+            "initial-frame": 0,
+            "enable-collisions": true,
+            "live-preview": false
+          },
+          "uid": 61,
+          "sid": 394288351638500,
+          "tags": "",
+          "instanceVariables": {},
+          "behaviors": {},
+          "showing": true,
+          "locked": false,
+          "world": {
+            "x": 640,
+            "y": 360,
+            "width": 1280,
+            "height": 720,
+            "originX": 0.5,
+            "originY": 0.5,
+            "color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "z": 0,
+            "angle": 0
+          }
+        },
+        {
+          "type": "CreditosFinal",
+          "properties": {
+            "text": "Inspirado em Édipo Rei, de Sófocles\n\nDesenvolvimento - Pedro Henrique Santos Garcia\n\nCriação de Mapas - Maria Clara Huppes Borges\n\nObrigado por jogar.",
+            "enable-bbcode": true,
+            "font": "PedroHand-Regular",
+            "size": 11,
+            "line-height": 0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              1,
+              0.94,
+              0.77,
+              1
+            ],
+            "horizontal-alignment": "center",
+            "vertical-alignment": "center",
+            "wrapping": "word",
+            "text-direction": "ltr",
+            "icon-set": -1,
+            "initially-visible": true,
+            "origin": "top-left",
+            "read-aloud": false
+          },
+          "uid": 41,
+          "sid": 114257211196004,
+          "tags": "",
+          "instanceVariables": {},
+          "behaviors": {},
+          "showing": true,
+          "locked": false,
+          "world": {
+            "x": 464,
+            "y": 351,
+            "width": 352,
+            "height": 130,
+            "originX": 0,
+            "originY": 0,
+            "color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "z": 0,
+            "angle": 0
+          }
+        },
+        {
+          "type": "FraseFinal",
+          "properties": {
+            "text": "“Nenhum homem pode fugir para sempre da verdade.”",
+            "enable-bbcode": true,
+            "font": "PedroHand-Regular",
+            "size": 15,
+            "line-height": 0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              1,
+              0.94,
+              0.77,
+              1
+            ],
+            "horizontal-alignment": "center",
+            "vertical-alignment": "center",
+            "wrapping": "word",
+            "text-direction": "ltr",
+            "icon-set": -1,
+            "initially-visible": true,
+            "origin": "top-left",
+            "read-aloud": false
+          },
+          "uid": 42,
+          "sid": 117528061735562,
+          "tags": "",
+          "instanceVariables": {},
+          "behaviors": {},
+          "showing": true,
+          "locked": false,
+          "world": {
+            "x": 479,
+            "y": 282,
+            "width": 322,
+            "height": 48,
+            "originX": 0,
+            "originY": 0,
+            "color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "z": 0,
+            "angle": 0
+          }
+        },
+        {
+          "type": "JogarNovamente",
+          "properties": {
+            "text": "PRESSIONE ENTER PARA VOLTAR AO MENU",
+            "enable-bbcode": true,
+            "font": "PedroHand-Regular",
+            "size": 13,
+            "line-height": 0,
+            "bold": false,
+            "italic": false,
+            "color": [
+              1,
+              0.94,
+              0.77,
+              1
+            ],
+            "horizontal-alignment": "center",
+            "vertical-alignment": "center",
+            "wrapping": "word",
+            "text-direction": "ltr",
+            "icon-set": -1,
+            "initially-visible": true,
+            "origin": "top-left",
+            "read-aloud": false
+          },
+          "uid": 43,
+          "sid": 784075548316528,
+          "tags": "",
+          "instanceVariables": {},
+          "behaviors": {},
+          "showing": true,
+          "locked": false,
+          "world": {
+            "x": 483,
+            "y": 517,
+            "width": 314,
+            "height": 42,
+            "originX": 0,
+            "originY": 0,
+            "color": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "z": 0,
+            "angle": 0
+          }
+        }
+      ],
+      "sid": 987044649785794,
+      "effectTypes": [],
+      "isInitiallyVisible": true,
+      "isInitiallyInteractive": true,
+      "isHTMLElementsLayer": false,
+      "color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "backgroundColor": [
+        0.3686274509803922,
+        0.3686274509803922,
+        0.3686274509803922,
+        1
+      ],
+      "isTransparent": false,
+      "sampling": "auto",
+      "parallaxX": 1,
+      "parallaxY": 1,
+      "scaleRate": 1,
+      "forceOwnTexture": false,
+      "renderingMode": "3d",
+      "drawOrder": "z-order",
+      "useRenderCells": false,
+      "blendMode": "normal",
+      "zElevation": 0,
+      "global": false
+    }
+  ],
+  "sid": 603808556509439,
+  "nonworld-instances": [],
+  "effectTypes": [],
+  "width": 1280,
+  "height": 720,
+  "unboundedScrolling": false,
+  "sampling": "auto",
+  "vpX": 0.5,
+  "vpY": 0.5,
+  "projection": "perspective",
+  "eventSheet": "Eventos_TelaFinal"
+}

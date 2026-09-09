@@ -1,0 +1,178 @@
+{
+	"name": "Eventos_Movimento",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 484460528488145,
+					"parameters": {
+						"key": 87
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 642028007837136,
+					"parameters": {
+						"variable": "DialogoAtivo"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 130344676467341,
+					"parameters": {
+						"variable": "EnigmaAtivo"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Édipo",
+					"sid": 297538993654738,
+					"behaviorType": "8Direções",
+					"parameters": {
+						"control": "up"
+					}
+				}
+			],
+			"sid": 594369967535376
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 827000079471821,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 316288103806078,
+					"parameters": {
+						"variable": "DialogoAtivo"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 241089029065543,
+					"parameters": {
+						"variable": "EnigmaAtivo"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Édipo",
+					"sid": 975921108077978,
+					"behaviorType": "8Direções",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 507368034032297
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 708119211478667,
+					"parameters": {
+						"key": 83
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 277142363223526,
+					"parameters": {
+						"variable": "DialogoAtivo"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 648587409512222,
+					"parameters": {
+						"variable": "EnigmaAtivo"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Édipo",
+					"sid": 888313992005493,
+					"behaviorType": "8Direções",
+					"parameters": {
+						"control": "down"
+					}
+				}
+			],
+			"sid": 966771955788538
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Teclado",
+					"sid": 949763616580815,
+					"parameters": {
+						"key": 68
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 221785527455086,
+					"parameters": {
+						"variable": "DialogoAtivo"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 498779455016593,
+					"parameters": {
+						"variable": "EnigmaAtivo"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "Édipo",
+					"sid": 707686037114042,
+					"behaviorType": "8Direções",
+					"parameters": {
+						"control": "right"
+					}
+				}
+			],
+			"sid": 776526257741993
+		}
+	],
+	"sid": 499017296637815
+}

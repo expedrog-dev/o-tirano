@@ -1,0 +1,250 @@
+{
+	"name": "Eventos_Palacio",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Eventos_Movimento"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Eventos_Interacao"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Eventos_Dialogo"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Eventos_Historia"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 809816483099308,
+					"parameters": {
+						"variable": "RevelacaoFinal"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 580181471207946
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Édipo",
+					"sid": 954768979314452,
+					"behaviorType": "8Direções",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "FadePreto",
+					"sid": 417817863320691,
+					"behaviorType": "Interpolação",
+					"parameters": {
+						"tags": "\"FinalEscurecer\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 878167439453163
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "FadePreto",
+					"sid": 353315045934919,
+					"behaviorType": "Interpolação",
+					"parameters": {
+						"tags": "\"FinalEscurecer\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Édipo",
+					"sid": 868743893134578,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "FadePreto",
+					"sid": 613654985606168,
+					"behaviorType": "Interpolação",
+					"parameters": {
+						"tags": "\"FinalClarear\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 357954852778588
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "FadePreto",
+					"sid": 177116522368191,
+					"behaviorType": "Interpolação",
+					"parameters": {
+						"tags": "\"FinalClarear\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "EdipoCego",
+					"sid": 859625430141508,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextoFinal",
+					"sid": 886706720011787,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "TextoFinal",
+					"sid": 104234081283475,
+					"behaviorType": "Cronômetro",
+					"parameters": {
+						"duration": "3.0",
+						"type": "once",
+						"tag": "\"TrocarTextoFinal\""
+					}
+				}
+			],
+			"sid": 782705859658263
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-timer",
+					"objectClass": "TextoFinal",
+					"sid": 571523440733487,
+					"behaviorType": "Cronômetro",
+					"parameters": {
+						"tag": "\"TrocarTextoFinal\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TextoFinal",
+					"sid": 485938961649427,
+					"parameters": {
+						"text": "\"Édipo deixou Tebas levando consigo o peso da própria verdade.\""
+					}
+				},
+				{
+					"id": "start-timer",
+					"objectClass": "TextoFinal",
+					"sid": 859833096103229,
+					"behaviorType": "Cronômetro",
+					"parameters": {
+						"duration": "3.0",
+						"type": "once",
+						"tag": "\"FadeFinal\""
+					}
+				}
+			],
+			"sid": 385067479396773
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-timer",
+					"objectClass": "TextoFinal",
+					"sid": 456849904252170,
+					"behaviorType": "Cronômetro",
+					"parameters": {
+						"tag": "\"FadeFinal\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "FadePreto",
+					"sid": 625626897631706,
+					"behaviorType": "Interpolação",
+					"parameters": {
+						"tags": "\"FimDoJogo\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 315696191006587
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "FadePreto",
+					"sid": 963595500060007,
+					"behaviorType": "Interpolação",
+					"parameters": {
+						"tags": "\"FimDoJogo\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 552077264180492,
+					"parameters": {
+						"layout": "TelaFinal"
+					}
+				}
+			],
+			"sid": 271088307302815
+		}
+	],
+	"sid": 488839881144683
+}

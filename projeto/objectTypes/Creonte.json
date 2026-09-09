@@ -1,0 +1,60 @@
+{
+	"name": "Creonte",
+	"plugin-id": "Sprite",
+	"sid": 487664553153987,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1230,
+						"height": 1278,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8871912,
+						"collisionPoly": {
+							"points": [
+								0.4609756097560976,
+								0.25273865414710484,
+								0.6097560975609756,
+								0.34194053208137715,
+								0.6414634146341464,
+								0.6001564945226917,
+								0.6178861788617886,
+								0.7386541471048513,
+								0.5756097560975609,
+								0.8333333333333334,
+								0.3845528455284553,
+								0.8176838810641628,
+								0.3439024390243902,
+								0.5320813771517997,
+								0.416260162601626,
+								0.27230046948356806
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 949170164913110,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

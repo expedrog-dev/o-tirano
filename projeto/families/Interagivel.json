@@ -1,0 +1,47 @@
+{
+	"name": "Interagivel",
+	"plugin-id": "Sprite",
+	"sid": 131473528881138,
+	"instanceVariables": [
+		{
+			"name": "NomeNPC",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 112292566217067
+		},
+		{
+			"name": "FalaNPC",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 133157346516101
+		},
+		{
+			"name": "DialogoID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 722391603544024
+		},
+		{
+			"name": "UltimaLinhadoDialogo",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 453293930765091
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Laio",
+		"Esfinge",
+		"CidadaoTebas",
+		"TestemunhaLaio",
+		"Creonte",
+		"Tiresias",
+		"Jocasta",
+		"Pastor"
+	]
+}

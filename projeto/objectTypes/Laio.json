@@ -1,0 +1,68 @@
+{
+	"name": "Laio",
+	"plugin-id": "Sprite",
+	"sid": 796164139600755,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1230,
+						"height": 1278,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8341270,
+						"collisionPoly": {
+							"points": [
+								0.44878048780487806,
+								0.2543035993740219,
+								0.510569105691057,
+								0.2543035993740219,
+								0.5593495934959349,
+								0.2668231611893584,
+								0.5975609756097561,
+								0.29029733959311427,
+								0.6227642276422765,
+								0.3732394366197183,
+								0.6292682926829268,
+								0.6799687010954617,
+								0.5821138211382114,
+								0.8536776212832551,
+								0.3886178861788618,
+								0.8513302034428795,
+								0.34552845528455284,
+								0.6799687010954617,
+								0.33983739837398375,
+								0.5375586854460094,
+								0.37317073170731707,
+								0.3270735524256651,
+								0.4113821138211382,
+								0.2777777777777778
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 332547570097889,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

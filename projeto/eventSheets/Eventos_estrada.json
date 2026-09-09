@@ -1,0 +1,184 @@
+{
+	"name": "Eventos_estrada",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Eventos_Interacao"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Eventos_Movimento"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Eventos_Dialogo"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Eventos_Historia"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 885656467627779,
+					"parameters": {
+						"variable": "CenaLaioConcluida"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 134861450063228,
+					"parameters": {
+						"variable": "ConfrontoLaioConcluido"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 238795328396237
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Édipo",
+					"sid": 275133742982106,
+					"behaviorType": "8Direções",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "FadePreto",
+					"sid": 360031834730675,
+					"behaviorType": "Interpolação",
+					"parameters": {
+						"tags": "\"Escurecer\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "0.5 ",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 996195604411997
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "FadePreto",
+					"sid": 686531480328975,
+					"behaviorType": "Interpolação",
+					"parameters": {
+						"tags": "\"Escurecer\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "FadePreto",
+					"sid": 241142175279979,
+					"behaviorType": "Interpolação",
+					"parameters": {
+						"tags": "\"Clarear\"",
+						"property": "offsetOpacity",
+						"end-value": "0",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Laio",
+					"sid": 455118921079980
+				}
+			],
+			"sid": 252384821737273
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "FadePreto",
+					"sid": 261173283706863,
+					"behaviorType": "Interpolação",
+					"parameters": {
+						"tags": "\"Clarear\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 976139340853240,
+					"parameters": {
+						"variable": "CenaLaioConcluida",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Édipo",
+					"sid": 615317444856759,
+					"behaviorType": "8Direções",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 201717980133912
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Édipo",
+					"sid": 180204641370896,
+					"parameters": {
+						"object": "SaidaEstrada"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 840565077247727,
+					"parameters": {
+						"variable": "CenaLaioConcluida"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 911222594718332,
+					"parameters": {
+						"layout": "EntradaTebas"
+					}
+				}
+			],
+			"sid": 993737916913741
+		}
+	],
+	"sid": 284785496464645
+}
