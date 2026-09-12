@@ -42,10 +42,10 @@
         {
           "type": "CreditosFinal",
           "properties": {
-            "text": "Inspirado em Édipo Rei, de Sófocles\n\nDesenvolvimento - Pedro Henrique Santos Garcia\n\nCriação de Mapas - Maria Clara Huppes Borges\n\nObrigado por jogar.",
+            "text": "Equipe\nArthur Machado Santos\nJoão Luiz Gelas Olea\nLeonardo de Souza Soares\nPedro Henrique Santos Garcia\nGabriel Menezes Valada\nMapas: Maria Clara Huppes Borges\nExperiência Criativa: Explorando Computação e Inteligência Artificial",
             "enable-bbcode": true,
             "font": "PedroHand-Regular",
-            "size": 11,
+            "size": 8.5,
             "line-height": 0,
             "bold": false,
             "italic": false,
